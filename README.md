@@ -19,4 +19,22 @@ Audio samples are organized by signal-to-noise ratio (SNR) and noise type.
 ---
 
 ## 📂 Directory Structure
-tree Test_samples
+
+Test_samples
+├── SNR_-5dB
+│ ├── fan
+│ │ ├── 00606_Original_Speech.wav
+│ │ ├── 00606_Unprocessed.wav
+│ │ ├── 00606_Conventional_ANC.wav
+│ │ ├── 00606_Ideal_KSANC.wav
+│ │ ├── 00606_RSE_KSANC.wav
+│ │ └── 00606_DeepANC.wav
+│ ├── engine
+│ ├── gearbox
+│ └── bearing
+│
+└── SNR_5dB
+├── fan
+├── engine
+├── gearbox
+└── bearing

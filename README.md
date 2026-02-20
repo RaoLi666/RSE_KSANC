@@ -1,7 +1,5 @@
 This repository provides some listening examples:
 
-**"Reference Signal Enhancement Method for Improving the Causality Margin of KSANC"**
-
 ---
 
 ## 🎧 Listening Examples
@@ -23,3 +21,15 @@ Audio samples are organized by signal-to-noise ratio (SNR) and noise type.
 ## 📂 Directory Structure
 
 # RSE_KSANC
+Test_samples/
+├── SNR_-5dB/
+│ ├── fan/
+│ ├── engine/
+│ ├── gearbox/
+│ └── bearing/
+│
+└── SNR_5dB/
+├── fan/
+├── engine/
+├── gearbox/
+└── bearing/

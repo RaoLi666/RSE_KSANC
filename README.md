@@ -19,15 +19,4 @@ Audio samples are organized by signal-to-noise ratio (SNR) and noise type.
 ---
 
 ## 📂 Directory Structure
-Test_samples/
-├── SNR_-5dB/
-│ ├── fan/
-│ ├── engine/
-│ ├── gearbox/
-│ └── bearing/
-│
-└── SNR_5dB/
-├── fan/
-├── engine/
-├── gearbox/
-└── bearing/
+tree Test_samples

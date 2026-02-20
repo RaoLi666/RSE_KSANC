@@ -19,8 +19,6 @@ Audio samples are organized by signal-to-noise ratio (SNR) and noise type.
 ---
 
 ## 📂 Directory Structure
-
-# RSE_KSANC
 Test_samples/
 ├── SNR_-5dB/
 │ ├── fan/

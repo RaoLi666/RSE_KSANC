@@ -24,7 +24,7 @@ This repository provides some listening examples.
 The filenames indicate the processing method applied to each sample:
 
 - **Original_Speech** – Clean speech signal at the error microphone  
-- **Unprocessed** – No active noise control (ANC)  
+- **Unprocessed** – No ANC applied, containing both noise and speech 
 - **Ideal_KSANC** – ANC using the pure noise reference (theoretical upper bound)
 - **Conventional_ANC** – ANC using the original reference signal
 - **DeepANC** – DeepANC baseline method  

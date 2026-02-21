@@ -8,7 +8,7 @@ This repository provides some listening examples.
 
 ### Sample 00606 – Fan Noise – SNR −5 dB
 
-<video controls width="250" src="Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.mp4"></video>
+<video controls width="250" src="Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.mp4"></video>
 
 
 ---

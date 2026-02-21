@@ -26,10 +26,10 @@ Test_samples
 │   ├── fan
 │   │   ├── 00606_Original_Speech.wav
 │   │   ├── 00606_Unprocessed.wav
-│   │   ├── 00606_Conventional_ANC.wav
 │   │   ├── 00606_Ideal_KSANC.wav
-│   │   ├── 00606_RSE_KSANC.wav
-│   │   └── 00606_DeepANC.wav
+│   │   ├── 00606_Conventional_ANC.wav
+│   │   ├── 00606_DeepANC.wav
+│   │   └── 00606_RSE_KSANC.wav
 │   ├── engine
 │   ├── gearbox
 │   └── bearing
@@ -56,12 +56,12 @@ The filenames indicate the processing method applied to each sample:
 
 Example:
 
-00606_Original_Speech.wav
+00606_RSE_KSANC.wav
 
 Where:
 
 - `00606` → Sample index  
-- `Original_Speech` → Processing method  
+- `RSE_KSANC` → Processing method  
 
 The repository includes listening examples for two randomly selected samples:
 

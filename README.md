@@ -1,4 +1,50 @@
-This repository provides some listening examples:
+# Reference Signal Enhancement for KSANC
+
+This repository provides some listening examples.
+
+---
+
+## 🎧 Listening Comparison
+
+### Sample 00606 – Fan Noise – SNR −5 dB
+
+| Method | Audio |
+|--------|-------|
+| Original Speech | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Original_Speech.wav"></audio> |
+| Unprocessed | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Unprocessed.wav"></audio> |
+| Ideal KSANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Ideal_KSANC.wav"></audio> |
+| Conventional ANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.wav"></audio> |
+| DeepANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_DeepANC.wav"></audio> |
+| RSE-based KSANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.wav"></audio> |
+
+---
+
+## 🏷️ Processing Method Description
+
+The filenames indicate the processing method applied to each sample:
+
+- **Original_Speech** – Clean speech signal at the error microphone  
+- **Unprocessed** – No active noise control (ANC)  
+- **Ideal_KSANC** – ANC using the pure noise reference (theoretical upper bound)
+- **Conventional_ANC** – ANC using the original reference signal
+- **DeepANC** – DeepANC baseline method  
+- **RSE_KSANC** – Proposed reference signal enhancement method 
+
+## 🔢 Filename Convention
+
+Example:
+
+00606_RSE_KSANC.wav
+
+Where:
+
+- `00606` → Sample index  
+- `RSE_KSANC` → Processing method  
+
+The repository includes listening examples for two randomly selected samples:
+
+- **00173**
+- **00606**
 
 ---
 
@@ -40,30 +86,3 @@ Test_samples
     ├── gearbox
     └── bearing
 ```
-
-## 🏷️ Processing Method Description
-
-The filenames indicate the processing method applied to each sample:
-
-- **Original_Speech** – Clean speech signal at the error microphone
-- **Unprocessed** – No active noise control (ANC) is applied
-- **Ideal_KSANC** – ANC using the pure noise signal as the reference, representing a theoretical upper performance bound that is not realizable in practice   
-- **Conventional_ANC** – ANC using the original noisy reference signal
-- **DeepANC** – The method in “Deep ANC: A deep learning approach to active noise control”
-- **RSE_KSANC** – Proposed reference signal enhancement method
-
-## 🔢 Filename Convention
-
-Example:
-
-00606_RSE_KSANC.wav
-
-Where:
-
-- `00606` → Sample index  
-- `RSE_KSANC` → Processing method  
-
-The repository includes listening examples for two randomly selected samples:
-
-- **00173**
-- **00606**

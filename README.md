@@ -8,9 +8,12 @@ This repository provides some listening examples.
 
 ### Sample 00606 – Fan Noise – SNR −5 dB
 
-| Method | Audio |
-|--------|-------|
-| Conventional_ANC | <video controls width="250" src="Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.mp4"></video> |
+- [00606_Original_Speech.wav](Test_samples/SNR_-5dB/fan/00606_Original_Speech.wav)
+- [00606_Unprocessed.wav](Test_samples/SNR_-5dB/fan/00606_Unprocessed.wav)
+- [00606_Ideal_KSANC.wav](Test_samples/SNR_-5dB/fan/00606_Ideal_KSANC.wav)
+- [00606_Conventional_ANC.wav](Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.wav)
+- [00606_DeepANC.wav](Test_samples/SNR_-5dB/fan/00606_DeepANC.wav)
+- [00606_RSE_KSANC.wav](Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.wav)
 
 
 ---

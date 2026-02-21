@@ -10,12 +10,12 @@ This repository provides some listening examples.
 
 | Method | Audio |
 |--------|-------|
-| Original Speech | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Original_Speech.wav"></audio> |
-| Unprocessed | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Unprocessed.wav"></audio> |
-| Ideal KSANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Ideal_KSANC.wav"></audio> |
-| Conventional ANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.wav"></audio> |
-| DeepANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_DeepANC.wav"></audio> |
-| RSE-based KSANC | <audio controls src="Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.wav"></audio> |
+| Original Speech | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_Original_Speech.wav" type="audio/wav"></audio> |
+| Unprocessed | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_Unprocessed.wav" type="audio/wav"></audio> |
+| Ideal KSANC | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_Ideal_KSANC.wav" type="audio/wav"></audio> |
+| Conventional ANC | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.wav" type="audio/wav"></audio> |
+| DeepANC | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_DeepANC.wav" type="audio/wav"></audio> |
+| RSE-based KSANC | <audio controls><source src="./Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.wav" type="audio/wav"></audio> |
 
 ---
 

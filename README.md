@@ -4,22 +4,6 @@ This repository provides some listening examples.
 
 ---
 
-## 🎧 Listening Comparison
-
-### Sample 00606 – SNR −5 dB – Fan Noise
-
-| Method | Demo |
-|--------|------|
-| Original Speech | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_Original_Speech.mp4" type="video/mp4"></video> |
-| Unprocessed | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_Unprocessed.mp4" type="video/mp4"></video> |
-| Conventional ANC | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_Conventional_ANC.mp4" type="video/mp4"></video> |
-| Ideal KSANC | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_Ideal_KSANC.mp4" type="video/mp4"></video> |
-| DeepANC | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_DeepANC.mp4" type="video/mp4"></video> |
-| RSE-based KSANC | <video controls style="width: 220px; height: 36px;"><source src="Test_samples/SNR_-5dB/fan/00606_RSE_KSANC.mp4" type="video/mp4"></video> |
-
-
----
-
 ## 🏷️ Processing Method Description
 
 The filenames indicate the processing method applied to each sample:

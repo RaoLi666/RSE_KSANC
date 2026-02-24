@@ -1,10 +1,10 @@
 # Reference Signal Enhancement for KSANC
 
-This repository provides some listening examples.
+This repository provides some audio examples.
 
-## 🎧 Listening Test Demo
+## 🎧 Audio Demo Page
 
-A listening page is available here:
+Audio samples of different processing methods:
 
 👉 https://raoli666.github.io/RSE_KSANC/
 
@@ -32,14 +32,14 @@ Where:
 - `00606` → Sample index  
 - `RSE_KSANC` → Processing method  
 
-The repository includes listening examples for two randomly selected samples:
+The repository includes audio examples for two randomly selected samples:
 
 - **00173**
 - **00606**
 
 ---
 
-## 🎧 Listening Examples
+## 🎧 Audio Examples
 
 Audio samples are organized by signal-to-noise ratio (SNR) and noise type.
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RSE_KSANC Demo">
+
+    <title>RSE_KSANC Demo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>A Causal Reference-Enhanced Active Noise Control Method for Speech Intelligibility and Quality Improvement</h1>
+        <div class="authors">
+            Anonymous Submission
+        </div>
+    </div>
+
+    <!-- Audio Demos Section -->
+    <div class="narrow-container" id="demo">
+        <div class="section-title">Audio Examples for Comparison</div>
+        <div class="snr-tabs">
+            <button class="snr-tab active" data-snr="SNR_-5dB">SNR −5 dB</button>
+            <button class="snr-tab" data-snr="SNR_5dB">SNR 5 dB</button>
+        </div>
+        <div id="demo-container"></div>
+    </div>
+
+    <script>
+    const METHOD_ORDER = [
+        "Original_Speech",
+        "Unprocessed",
+        "Ideal_KSANC",
+        "Conventional_ANC",
+        "DeepANC",
+        "RSE_KSANC"
+    ];
+
+    const SNR_ORDER = [
+        "SNR_-5dB",
+        "SNR_5dB"
+    ];
+
+    const NOISE_ORDER = [
+        "fan",
+        "engine",
+        "bearing",
+        "gearbox"
+    ];
+
+    // 👉 需要展示的 sample ID
+    const SAMPLE_IDS = [
+        "00606",
+        "00173"
+    ];
+    function formatSNR(snr) {
+        const value = snr.replace("SNR_", "").replace("dB", "");
+
+        if (value.startsWith("-")) {
+            return `🎧 SNR −${value.substring(1)} dB`;  // 真负号 U+2212
+        }
+
+        return `🎧 SNR ${value} dB`;
+    }
+
+    function createAudioCard(sample, snr, noise, method) {
+        const wavPath = `wav/${snr}/${noise}/${sample}_${method}.wav`;
+        const figPath = `fig/${snr}/${noise}/${sample}_${method}.png`;
+
+        return `
+        <div class="audio-card">
+            <div class="card-title">${method.replaceAll("_", " ")}</div>
+            <div class="card-image">
+                <a href="${figPath}" data-lightbox="${sample}-${snr}-${noise}">
+                    <img src="${figPath}">
+                </a>
+            </div>
+            <div class="card-audio">
+                <audio controls preload="none">
+                    <source src="${wavPath}" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+        `;
+    }
+
+    function renderDemo(selectedSNR) {
+        const container = document.getElementById("demo-container");
+        let html = "";
+
+        SNR_ORDER.forEach(snr => {
+
+            if (selectedSNR && snr !== selectedSNR) return;
+
+            html += `<div class="snr-title">${formatSNR(snr)}</div>`;
+
+            NOISE_ORDER.forEach(noise => {
+                SAMPLE_IDS.forEach(sample => {
+
+                    html += `
+                    <div class="file-section">
+                        <div class="file-header">
+                            <div class="file-title">
+                                <strong>${noise}</strong> — Sample ${sample}
+                            </div>
+                        </div>
+
+                        <div class="audio-grid-c3">
+                            ${METHOD_ORDER.map(method =>
+                                createAudioCard(sample, snr, noise, method)
+                            ).join("")}
+                        </div>
+                    </div>
+                    `;
+                });
+            });
+        });
+
+        container.innerHTML = html;
+    }
+
+    document.querySelectorAll(".snr-tab").forEach(tab => {
+        tab.addEventListener("click", () => {
+
+            document.querySelectorAll(".snr-tab").forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            const snr = tab.dataset.snr;
+            renderDemo(snr);
+        });
+    });
+
+    renderDemo("SNR_-5dB");
+        </script>
+    </body>
+
+</html>

@@ -4,7 +4,7 @@ This repository provides some audio examples.
 
 ## 🎧 Audio Demo Page
 
-Audio samples of different processing methods:
+Click the link below to listen to the audio examples:
 
 👉 https://raoli666.github.io/RSE_KSANC/
 
